@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bahariaa Store | Giyim</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<style>
+    .go-site {
+    display: inline-block;
+    margin: 15px 0 20px;
+    padding: 10px 26px;
+    border-radius: 8px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.go-site:hover {
+    background: #d8cdb4;
+    color: black;
+}
+    .site-footer {
+    margin-top: 100px;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.6);
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* GENEL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+}
+
+/* HERO */
+.category-hero {
+    height: 420px;
+    background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url("giyim.png") center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+}
+
+/* LOGO + MARKA */
+.hero-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero-top img {
+    height: 55px;
+}
+
+.hero-top h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 34px;
+    letter-spacing: 2px;
+    color: white;
+    margin: 0;
+}
+
+/* SAYFA BAŞLIĞI */
+.category-hero h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    letter-spacing: 4px;
+    color: white;
+    margin: 0;
+}
+
+/* ÜRÜNLER */
+.products {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    transition: .3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 15px 0 5px;
+    font-size: 16px;
+}
+
+.product-card span {
+    font-weight: bold;
+}
+
+.product-card button {
+    margin: 15px 0 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #d8cdb4;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background: black;
+    color: white;
+}
+.home-link {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+.home-link:hover {
+    opacity: 1;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="category-hero">
+    <a href="index.html" class="home-link">ANASAYFA</a>
+
+    <div class="hero-top">
+        <img src="logo.png" alt="Bahariaa Store">
+        <h1>BAHARIAA STORE</h1>
+    </div>
+
+    <h2>GİYİM</h2>
+
+</section>
+
+<!-- ÜRÜNLER -->
+<section class="products">
+
+    <div class="product-card">
+        <img src="urun1.jpeg">
+        <h3>Kargo Cepli Baggy Pantolon</h3>
+        <span>₺299</span><br>
+        <a href="https://dolap.com/ara?q=%40vintageoldsoul" target="_blank" class="go-site">
+    Siteye Git
+</a>
+    </div>
+
+    <div class="product-card">
+        <img src="urun2.jpeg">
+        <h3>Vintage Lacivert Kot Pantolon</h3>
+        <span>₺599</span><br>
+        <a href="https://dolap.com/ara?q=%40vintageoldsoul" target="_blank" class="go-site">
+    Siteye Git
+</a>
+    </div>
+
+    <div class="product-card">
+        <img src="urun3.jpeg">
+        <h3>Siyah Fiyonk İşlemeli Baggy Geniş Paça</h3>
+        <span>₺279</span><br>
+        <a href="https://dolap.com/ara?q=%40vintageoldsoul" target="_blank" class="go-site">
+    Siteye Git
+</a>
+    </div>
+
+    <div class="product-card">
+        <img src="urun4.jpeg">
+        <h3>Kurdele Detaylı Kot Pantolon Mavi</h3>
+        <span>₺459</span><br>
+        <a href="https://dolap.com/ara?q=%40vintageoldsoul" target="_blank" class="go-site">
+    Siteye Git
+</a>
+    </div>
+
+    <div class="product-card">
+        <img src="urun5.jpeg">
+        <h3>Mavi Yıldız Bağlı Karo Cep Baggy Pantolon</h3>
+        <span>₺459</span><br>
+        <a href="https://dolap.com/ara?q=%40vintageoldsoul" target="_blank" class="go-site">
+    Siteye Git
+</a>
+    </div>
+
+    <div class="product-card">
+        <img src="urun6.jpeg">
+        <h3>Dark Blue Kargo Ön Cep Detaylı Unisex Patolon</h3>
+        <span>₺459</span><br>
+        <a href="https://dolap.com/ara?q=%40vintageoldsoul" target="_blank" class="go-site">
+    Siteye Git
+</a>
+    </div>
+
+    <div class="product-card">
+        <img src="urun7.jpeg">
+        <h3>Palazzo Jean Pantolon Taşlanmış Mavi</h3>
+        <span>₺459</span><br>
+        <a href="https://dolap.com/ara?q=%40vintageoldsoul" target="_blank" class="go-site">
+    Siteye Git
+</a>
+    </div>
+
+    <div class="product-card">
+        <img src="urun8.jpeg">
+        <h3>Kadın Orta Bel Relaxed Fit Jean</h3>
+        <span>₺459</span><br>
+        <a href="https://gerceksatis-siten.com" target="_blank" class="go-site">
+    Siteye Git
+</a>
+    </div>
+
+</section>
+<footer class="site-footer">
+    <p>© 2025 Bahariaa Store. Tüm hakları saklıdır.</p>
+</footer>
+</body>
+</html>
