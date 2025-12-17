@@ -6,40 +6,216 @@
     <title>Bahariaa Store</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        header {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            padding: 15px;
-            background: #111;
-            color: white;
-             justify-content: center;
-        }
-        header img {
-            height: 60px;
-        }
-        header h1 {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 34px;
-            letter-spacing: 1.5px;
-            margin: 0;
-        }
+       .hero {
+    position: relative;
+    height: 100vh;
+    background: url("hero.png") right center / cover no-repeat;
+
+    display: flex;
+    align-items: center;      
+}
+
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.1)
+    );
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 520px;
+    margin-left: 90px;
+    color: white;
+}
+
+.hero-content h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 56px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.hero-content p {
+    margin: 18px 0 35px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 14px 36px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: white;
+    color: black;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    color: white;
+}
+
+
+.menu-left {
+    display: flex;
+    gap: 25px;
+}
+
+
+.menu-right {
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+    margin-right: 40px; /* SAĞA YAPIŞTIRIR */
+}
+
+
+.menu-left a,
+.menu-right a {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-left a:hover,
+.menu-right a:hover {
+    opacity: 0.7;
+}
+
+
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.center img {
+    height: 55px;
+}
+
+.center h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    margin: 0;
+}
+
+
+.menu-left {
+    margin-right: auto;
+    margin-left: 20px;
+    display: flex;
+    gap: 25px; 
+}
+
+.menu-left a {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-left a:hover {
+    opacity: 0.7;
+}
+ header {
+    position: absolute;     
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+
+    background: transparent; 
+    color: white;
+}
+
+
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header img {
+    height: 60px;
+}
+
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 34px;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
     </style>
 </head>
 <body>
 
 <header>
-    <img src="logo.png" alt="Logo">
-    <h1>BAHARIAA STORE</h1>
+
+    <nav class="menu-left">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="giyim.html">Giyim</a>
+    </nav>
+
+   
+    <div class="center">
+        <img src="logo.png" alt="Logo">
+        <h1>BAHARIAA STORE</h1>
+    </div>
+
+ 
+    <nav class="menu-right">
+        <a href="tel:+905xxxxxxxxx">İletişim: 0546 143 85 27</a>
+        <a href="hakkımızda.html">Hakkımızda</a>
+    </nav>
 </header>
+
+<section class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h2>YENİ SEZON ÜRÜNLER</h2>
+        <p>Tarzını Bahariaa ile tamamla</p>
+        <a href="giyim.html" class="hero-btn">Alışverişe Başla</a>
+    </div>
+</section>
 
 </body>
 </html>
    
-
 
 
